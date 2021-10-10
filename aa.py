@@ -21,6 +21,22 @@ class User:
             self.clear()
             self.tanla()
             inp_tanla = input('[1, 2, 3]: ')
+        if inp_tanla == self.tanla_values[0]:
+            self.exit()
+        if inp_tanla == self.tanla_values[1]:
+            self.register()
+        if inp_tanla == self.tanla_values[2]:
+            self.log_in()
+
+    def exit(self):
+        print('Tugadi!!!')
+        exit()
+
+    def register(self):
+        pass
+
+    def log_in(self):
+        pass
 
     @staticmethod
     def clear():
